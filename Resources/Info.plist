@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>com.moridonut.dcreveal</string>
+    <key>CFBundleName</key>
+    <string>dcreveal</string>
+    <key>CFBundleDisplayName</key>
+    <string>dcreveal</string>
+    <key>CFBundleExecutable</key>
+    <string>dcreveal</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>0.1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+    <!-- Dock にもメニューバーにも出さない常駐エージェント -->
+    <key>LSUIElement</key>
+    <true/>
+    <!-- Finder へのフォールバック時に Apple Event を送るための説明文 -->
+    <key>NSAppleEventsUsageDescription</key>
+    <string>Double Commander が使えないとき、Finder に「表示」を代わりに依頼するために使います。</string>
+</dict>
+</plist>
