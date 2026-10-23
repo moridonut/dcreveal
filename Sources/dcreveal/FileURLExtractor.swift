@@ -16,7 +16,7 @@ enum FileURLExtractor {
 
     private static func url(from d: NSAppleEventDescriptor) -> URL? {
         // alias / bookmark / furl など、システムが変換できるものはこれで取れる
-        if let u = d.fileURL { return u }
+        if let u = d.fileURLValue { return u }
         if let data = d.coerce(toDescriptorType: DescType(typeFileURL))?.data,
            let s = String(data: data, encoding: .utf8),
            let u = URL(string: s), u.isFileURL {
